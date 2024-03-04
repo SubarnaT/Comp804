@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task 2 - Styled Table</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th {
+    background-color: #4CAF50; /* Green background for header */
+    color: white;
+    padding: 10px;
+    text-align: left;
+  }
+  th:first-child {
+    background-color: #4CAF50; /* Blue background for the "Activity" header */
+  }
+  td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Horizontal bottom border for each cell */
+  }
+  .date-column {
+    border-left: 2px solid #000; /* Vertical bar between columns, starting from the first data row */
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  tr:nth-child(odd) td:first-child {
+    background-color: #ddd; /* Background color for odd rows' first cell */
+  }
+  a {
+    color: #0000FF;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>Activity</th>
+    <th>Date</th>
+  </tr>
+  <tr>
+    <td>First day to enroll for re-enrolling (continuing students)</td>
+    <td class="date-column">21 Nov 2022</td>
+  </tr>
+  <tr>
+    <td>Orientation</td>
+    <td class="date-column">18 Jul 2023</td>
+  </tr>
+  <tr>
+    <td>Lectures Commence (weeks 1-9)</td>
+    <td class="date-column">24 Jul - 22 Sep 2023</td>
+  </tr>
+  <tr>
+    <td>Last day to enrol/add subjects yourself</td>
+    <td class="date-column">04 Aug 2023</td>
+  </tr>
+  <tr>
+    <td>
+      <h2>CENSUS DATE</h2>
+      <ul class="square">
+        <li>fees due</li>
+        <li>Last day to withdraw from subject/s without paying for them</li>
+        <li>HECS/FEE HELP debt reporting date</li>
+        <li>Last day to change HECS/FEE HELP billing option</li>
+      </ul>
+      <a href="https://uowedu.service-now.com/kb?id=kb_article_view&sysparm_article=KB0012659">Learn more about Census date ></a>
+    </td>
+    <td class="date-column">31 Aug 2023</td>
+  </tr>
+  <!-- Continue adding rows as needed -->
+</table>
+
+</body>
+</html>
