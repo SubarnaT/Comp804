@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>COMP804 Task 1</title>
+<style>
+  #student-info {
+    color: #123456;
+    border: 1px solid #abcdef;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: left;
+  }
+
+  #subject-info {
+    color: #654321;
+    border: 2px dashed #fedcba;
+    background-color: #e0e0e0;
+    padding: 15px;
+    text-align: left;
+  }
+
+  #assignment-info {
+    color: #f1f1f1;
+    border: 3px dotted #abcabc;
+    background-color: #1412a4;
+    padding: 20px;
+    text-align: left;
+  }
+</style>
+</head>
+<body>
+  <h1>Task 1 - Using CSS to display the following information</h1>
+
+<h2 id="student-info">8843028 Subarna Talukder</h2>
+<h3 id="subject-info">COMP804: Web Security</h3>
+<h4 id="assignment-info">Assignment 1, due at the end of Week 5</h4>
+
+<title>Task 2 - Styled Table</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th {
+    background-color: #4CAF50; /* Green background for header */
+    color: white;
+    padding: 10px;
+    text-align: left;
+  }
+  th:first-child {
+    background-color: #4CAF50; /* Blue background for the "Activity" header */
+  }
+  td {
+    padding: 10px;
+    border-bottom: 1px solid #121b77; /* Horizontal bottom border for each cell */
+  }
+  .date-column {
+    border-left: 2px solid #000; /* Vertical bar between columns, starting from the first data row */
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  tr:nth-child(odd) td:first-child {
+    background-color: #ddd; /* Background color for odd rows' first cell */
+  }
+  a {
+    color: #0000FF;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
