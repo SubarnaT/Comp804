@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>COMP804 Task 1</title>
+<style>
+  #student-info {
+    color: #123456;
+    border: 1px solid #abcdef;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: left;
+  }
+
+  #subject-info {
+    color: #654321;
+    border: 2px dashed #fedcba;
+    background-color: #e0e0e0;
+    padding: 15px;
+    text-align: left;
+  }
+
+  #assignment-info {
+    color: #f1f1f1;
+    border: 3px dotted #abcabc;
+    background-color: #1412a4;
+    padding: 20px;
+    text-align: left;
+  }
+</style>
+</head>
+<body>
+  <h1>Task 1 - Using CSS to display the following information</h1>
+
+<h2 id="student-info">Subarna Talukder; Student ID : 8843028</h2>
+<h3 id="subject-info">COMP804: Web Security</h3>
+<h4 id="assignment-info">Assignment 1, due at the end of Week 5</h4>
+
+<title>Task 2 - Styled Table</title>
+<h1>Task 2- Styling table with html and CSS</h1>
+<style>
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th {
+      background-color: #4CAF50; /* Green background for header */
+      color: white;
+      padding: 10px;
+      text-align: left;
+    }
+    th:first-child {
+      background-color: #4CAF50; /* Blue background for the "Activity" header */
+    }
+    td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd; /* Horizontal bottom border for each cell */
+    }
+    .date-column {
+      border-left: 2px solid #000; /* Vertical bar between columns, starting from the first data row */
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    tr:nth-child(odd) td:first-child {
+      background-color: #ddd; /* Background color for odd rows' first cell */
+    }
+    a {
+      color: #0000FF;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  </head>
+  <body>
+  
+  <table>
+    <tr>
+      <th>Activity</th>
+      <th>Date</th>
+    </tr>
+    <tr>
+      <td>First day to enroll for re-enrolling (continuing students)</td>
+      <td class="date-column">21 Nov 2022</td>
+    </tr>
+    <tr>
+      <td>Orientation</td>
+      <td class="date-column">18 Jul 2023</td>
+    </tr>
+    <tr>
+      <td>Lectures Commence (weeks 1-9)</td>
+      <td class="date-column">24 Jul - 22 Sep 2023</td>
+    </tr>
+    <tr>
+      <td>Last day to enrol/add subjects yourself</td>
+      <td class="date-column">04 Aug 2023</td>
+    </tr>
+    <tr>
+      <td>
+        <h2>CENSUS DATE</h2>
+        <ul class="square">
+          <li>fees due</li>
+          <li>Last day to withdraw from subject/s without paying for them</li>
+          <li>HECS/FEE HELP debt reporting date</li>
+          <li>Last day to change HECS/FEE HELP billing option</li>
+        </ul>
+        <a href="https://uowedu.service-now.com/kb?id=kb_article_view&sysparm_article=KB0012659">Learn more about Census date ></a>
+      </td>
+      <td class="date-column">31 Aug 2023</td>
+    </tr>
+    <!-- Continue adding rows as needed -->
+  </table>
+
+<body>
+    <h1>Task 3 - Using HTML & CSS to style a table</h1>
+    <title>Table with Web Attacks</title>
+
+    <table id="Web_Attack";
+    style=" border-style:dotted; border-collapse: collapse; border-spacing: 10px; font-size:20px; text-align: center;">
+    <tr id="headerRow; style="background-color:#00000010; color:navy; font-size:40px;>
+      <th class="Types of web Attack" ;
+        style="background-color: rgb(216, 79, 79);  padding: 20px; text-align: center; vertical-align: top; border-style: dashed; border-color: black; border-width: 5p;">
+        Types of web Attack
+      </th>
+      <th class="Description" ;
+        style="background-color: rgb(216, 79, 79);  padding: 20px; text-align: center; vertical-align: top; border-style: dashed; border-color: black; border-width: 5p;">
+        Description
+      </th>
+     </tr>
+ </head>
+ <body>
+   <tr>
+     <td class="oddRow; Description" ;
+     style="border-style: dashed; background-color: #cc000011; padding: 20px; text-align: center; vertical-align: top;"
+     style="color:maroon" ; font-size="60px" ;>
+     DDoS attack
+     <img src="DDos.png" width="40px" alt="DdoS attack"></td>
+ <td style="border-style: dashed; background-color: #cc000011; padding: 20px; text-align: center; vertical-align: top;"
+ style="color:maroon" ; font-size="60px" ;>
+ What is DDoS and how to prevent<a href="https://www.comparitech.com/net-admin/dos-vs-ddos-attacks-differences-prevention">
+   Prevention of DDos</a></td>
+   </tr>
+   <tr>
+     <td class="evenRow; Description" ;
+     style="border-style: dashed; background-color: #25cc0011; padding: 20px; text-align: center; vertical-align: top;"
+     style="color:maroon" ; font-size="60px";>
+     "Cross Site Scripting" 
+     <img src="XSS.png" width="30px" alt="Cross Site Scripting">
+ </td>
+ <td class="evenRow; Description" ;
+ style="border-style: dashed; background-color: #25cc0011; padding: 20px; text-align: center; vertical-align: top;"
+ style="color:maroon" ; font-size="60px" ;>How to prevent XSS <a href="https://portswigger.net/web-security/cross-site-scripting/preventing">How to prevent XSS</a></td>
+   </tr>
+   <tr>
+     <td class="oddRow; Description" ;
+     style="border-style: dashed; background-color: #cc000011; padding: 20px; text-align: center; vertical-align: top;"
+     style="color:maroon" ; font-size="60px" ;>
+     SQL Injection Attack" 
+     <img src="SQL.png" width="40px" alt="SQL Injection Attack">
+ </td>
+ <td style="border-style: dashed; background-color: #cc000011; padding: 20px; text-align: center; vertical-align: top;"
+   style="color:maroon" ; font-size="60px" ;><a href="https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html">Prevention of SQL Injection attack</a></td>
+   </tr>
+   <tr>
+         <td class="evenRow; Description" ;
+         style="border-style: dashed; background-color: #25cc0011; padding: 20px; text-align: center; vertical-align: top;"
+         style="color:maroon" ; font-size="60px";>"Broken Authentication Attack" 
+     <img src="broken authentication.jpg" width="40px" alt="Broken Authentication Attack">
+ </td>
+ <td class="evenRow; Description" ;
+ style="border-style: dashed; background-color: #25cc0011; padding: 20px; text-align: center; vertical-align: top;"
+ style="color:maroon" ; font-size="60px";> how to prevent <a href="https://brightsec.com/blog/broken-access-control-attack-examples-and-4-defensive-measures/#4_ways">Prevention of Broken access control attack</a></td>
+   </tr>
+   <tr>
+     <td class="oddRow; Description" ;
+     style="border-style: dashed; background-color: #cc000011; padding: 20px; text-align: center; vertical-align: top;"
+     style="color:maroon" ; font-size="60px" ;>
+     "Brute Force Attack"
+     <img src="brute force attack.jpg" width="40px" alt="brute force attack"></td>
+     <td style="border-style: dashed; background-color: #cc000011; padding: 20px; text-align: center; vertical-align: top;"
+       style="color:maroon" ; font-size="60px" ;>
+       Prevention of Brute Force <a href="https://sucuri.net/guides/what-is-brute-force-attack/#:~:text=Brute%20force%20attacks%20rely%20on,more%20than%20a%20few%20passwords.">How brute force works and prevention</a></td>
+   </tr>
+   <tr>
+     <td class="evenRow; Description" ;
+     style="border-style: dashed; background-color: #25cc0011; padding: 20px; text-align: center; vertical-align: top;"
+     style="color:maroon" ; font-size="60px";>"Cryptography
+     <img src="crytography.png" width="40px" alt="Cryptography"></td>
+     <td class="evenRow; Description" ;
+     style="border-style: dashed; background-color: #25cc0011; padding: 20px; text-align: center; vertical-align: top;"
+     style="color:maroon" ; font-size="60px";>"Types of cruptography and prevention <a href="https://blog.daisie.com/cryptographic-attacks-understanding-and-prevention/#:~:text=Codes%20and%20ciphers%20are%20used,opening%20for%20a%20cryptographic%20attack.">Types of cryptography and prevention</a></td>
+   </tr>
+   <tr>
+     <td class="oddRow; Description" ;
+     style="border-style: dashed; background-color: #cc000011; padding: 20px; text-align: center; vertical-align: top;"
+     style="color:maroon" ; font-size="60px" ;>
+     "Man-in-the-middle Attack"
+     <img src="man-in-the-middle-mitm-attack.png" width="40px" alt="man-in-the-middle-mitm-attack"></td>
+     <td style="border-style: dashed; background-color: #cc000011; padding: 20px; text-align: center; vertical-align: top;"
+     style="color:maroon" ; font-size="60px" ;>5 ways to prevent MITM attack <a href="https://www.fool.com/the-ascent/small-business/endpoint-security/articles/mitm/">5 ways to prevent MITM attack</a></td>
+   </tr>
+   <tr>
+     <td class="evenRow; Description" ;
+     style="border-style: dashed; background-color: #25cc0011; padding: 20px; text-align: center; vertical-align: top;"
+     style="color:maroon" ; font-size="60px";>"Spoofing
+     <img src="spoofing.jpg" width="40px" alt="spoofing attack"></td>
+     <td class="evenRow; Description" ;
+     style="border-style: dashed; background-color: #25cc0011; padding: 20px; text-align: center; vertical-align: top;"
+     style="color:maroon" ; font-size="60px";>"Types of Spoofing and how to detect <a href="https://www.malwarebytes.com/spoofing#:~:text=Spoofing%2C%20as%20it%20pertains%20to,Website%20and%2For%20URL%20spoofing">Spoofing attack and detection</a></td>
+   </tr>
+   <tr>
+     <td class="oddRow; Description" ;
+     style="border-style: dashed; background-color: #cc000011; padding: 20px; text-align: center; vertical-align: top;"
+     style="color:maroon" ; font-size="60px" ;>
+     "Exploit"
+     <img src="exploit.jpg" width="40px" alt="Exploit attack"></td>
+     <td style="border-style: dashed; background-color: #cc000011; padding: 20px; text-align: center; vertical-align: top;"
+     style="color:maroon" ; font-size="60px" ;>All about explot attack <a href="https://www.google.com/search?q=what+is+exploit+attack&sca_esv=179241790b8982d2&rlz=1C1GCEA_enAU934AU934&sxsrf=ACQVn0_U_mQVJgAbZg76BL6tgA61yNeUaQ%3A1709477148190&ei=HI3kZZ6FC9Dc2roP_e6RyAQ&ved=0ahUKEwieg63RqtiEAxVQrlYBHX13BEkQ4dUDCBA&uact=5&oq=what+is+exploit+attack&gs_lp=Egxnd3Mtd2l6LXNlcnAiFndoYXQgaXMgZXhwbG9pdCBhdHRhY2syBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGA0ipG1DsA1iHGXABeACQAQCYAYUCoAHaGaoBBjAuMS4xNLgBA8gBAPgBAZgCD6ACjRnCAgoQABhHGNYEGLADwgILEAAYgAQYigUYkQLCAgoQABiABBhGGPkBwgIkEAAYgAQYRhj5ARiXBRiMBRjdBBhGGPkBGPQDGPUDGPYD2AEBwgIKEAAYgAQYFBiHAsICCBAAGBYYHhgPwgIIEAAYFhgeGAqYAwCIBgGQBgi6BgYIARABGBOSBwYxLjAuMTQ&sclient=gws-wiz-serp">Types of exploit and how to detect</a></td>
+   </tr>
+   <tr>
+     <td class="evenRow; Description" ;
+     style="border-style: dashed; background-color: #25cc0011; padding: 20px; text-align: center; vertical-align: top;"
+     style="color:maroon" ; font-size="60px";>"Password
+     <img src="password.jpg" width="40px" alt="Password attack"></td>
+     <td class="evenRow; Description" ;
+     style="border-style: dashed; background-color: #25cc0011; padding: 20px; text-align: center; vertical-align: top;"
+     style="color:maroon" ; font-size="60px";>"Types of password attack <a href="https://www.sailpoint.com/identity-library/8-types-of-password-attacks/">Types of password attack and prevention</a></td>
+   </tr>
+ </table>
+</body>
+<h1>Task 4: Javascript with button</h1>
+
+<title>Display Message and Animal Image</title>
+<style>
+    .animalImage {
+      display: none; /* Initially hide all animal images */
+      max-width: 50%; /* Ensure the image fits within its container */
+    }
+  </style>
+  </head>
+  <body>
+  
+  <button id="catButton">Cat</button>
+  <button id="lionButton">Lion</button>
+  <button id="frogButton">Frog</button>
+  <div id="message1"></div>
+  <div id="message2"></div>
+  <img id="catImage" class="animalImage" src="cat.jpg" alt="Cat Image">
+  <img id="lionImage" class="animalImage" src="Lion.jpg" alt="Lion Image">
+  <img id="frogImage" class="animalImage" src="Pascal.jpg" alt="Frog Image">
+  
+  <script>
+  document.getElementById("catButton").addEventListener("click", function() {
+    displayAnimal("cat", "User clicks Cat", "Cat is clicked");
+  });
+  
+  document.getElementById("lionButton").addEventListener("click", function() {
+    displayAnimal("lion", "User clicks Lion", "Lion is clicked");
+  });
+  
+  document.getElementById("frogButton").addEventListener("click", function() {
+    displayAnimal("frog", "User clicks Frog", "Frog is clicked");
+  });
+  
+  function displayAnimal(animal, message1, message2) {
+    var messageDiv1 = document.getElementById("message1");
+    var messageDiv2 = document.getElementById("message2");
+    var animalImage = document.getElementById(animal + "Image");
+  
+    messageDiv1.textContent = message1;
+    messageDiv2.textContent = message2;
+    
+    // Hide all animal images first
+    var animalImages = document.querySelectorAll(".animalImage");
+    animalImages.forEach(function(img) {
+      img.style.display = "none";
+    });
+  
+    // Display the selected animal image
+    animalImage.style.display = "block";
+  }
+  </script>
+
+
+</body>
+</html>
+
