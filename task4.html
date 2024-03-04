@@ -1,0 +1,58 @@
+<h1> Task 4 </h1>
+<!-- html code for task 2 must be right below -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Display Message and Animal Image</title>
+<style>
+    .animalImage {
+      display: none; /* Initially hide all animal images */
+      max-width: 50%; /* Ensure the image fits within its container */
+    }
+  </style>
+  </head>
+  <body>
+  
+  <button id="catButton">Cat</button>
+  <button id="lionButton">Lion</button>
+  <button id="frogButton">Frog</button>
+  <div id="message1"></div>
+  <div id="message2"></div>
+  <img id="catImage" class="animalImage" src="cat.jpg" alt="Cat Image">
+  <img id="lionImage" class="animalImage" src="Lion.jpg" alt="Lion Image">
+  <img id="frogImage" class="animalImage" src="Pascal.jpg" alt="Frog Image">
+  
+  <script>
+  document.getElementById("catButton").addEventListener("click", function() {
+    displayAnimal("cat", "User clicks Cat", "Cat is clicked");
+  });
+  
+  document.getElementById("lionButton").addEventListener("click", function() {
+    displayAnimal("lion", "User clicks Lion", "Lion is clicked");
+  });
+  
+  document.getElementById("frogButton").addEventListener("click", function() {
+    displayAnimal("frog", "User clicks Frog", "Frog is clicked");
+  });
+  
+  function displayAnimal(animal, message1, message2) {
+    var messageDiv1 = document.getElementById("message1");
+    var messageDiv2 = document.getElementById("message2");
+    var animalImage = document.getElementById(animal + "Image");
+  
+    messageDiv1.textContent = message1;
+    messageDiv2.textContent = message2;
+    
+    // Hide all animal images first
+    var animalImages = document.querySelectorAll(".animalImage");
+    animalImages.forEach(function(img) {
+      img.style.display = "none";
+    });
+  
+    // Display the selected animal image
+    animalImage.style.display = "block";
+  }
+  </script>
+  
+  </body>
+  </html>
